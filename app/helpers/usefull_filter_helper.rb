@@ -47,7 +47,7 @@ module UsefullFilterHelper
       options[:html][:method] ||= :get
       options[:html][:class] ||= "span-24 filter_bar"
       options[:html_1] = options.delete(:html)
-      options.merge!(:builder => FilterFormBuilder)
+      options.merge!(:builder => UsefullFilter::FilterFormBuilder)
       #Estraggo le options che mi interessano, perchè una volta passate al builder
       #per qulache arcano motivo vengono alterate....
       classe = options[:html_1].delete(:class)
