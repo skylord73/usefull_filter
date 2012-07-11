@@ -17,4 +17,4 @@ module UsefullFilter
 end
 
 #Add ere require to specific file or gem used
-require "rails/all"
+

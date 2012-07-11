@@ -1,5 +1,5 @@
 module UsefullFilter
-class FilterFormBuilder < ActionView::Helpers::FormBuilder
+  class FilterFormBuilder < ActionView::Helpers::FormBuilder
     
     DEFAULT_TYPES=["equals", "does_not_equal", "in", "not_in"]
     STRING_TYPES=["contains", "does_not_contain", "starts_with", "does_not_start_with", "ends_with", "does_not_end_with"]
