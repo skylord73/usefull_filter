@@ -5,8 +5,8 @@ require File.expand_path('../lib/usefull_filter/version', __FILE__)
 Gem::Specification.new do |s|
   s.authors          = ["Andrea Bignozzi"]
   s.email            = ["skylord73@gmail.com"]
-  s.description      = "Describe Gem Here"
-  s.summary          = "Describe Gem Here"
+  s.description      = "Wraps meta_search with usefull helpers"
+  s.summary          = "Wraps meta_search with usefull helpers"
   
   s.files            = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc", "CHANGELOG.md"]
   s.executables      = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
