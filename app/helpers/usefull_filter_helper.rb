@@ -1,4 +1,4 @@
-require "usefull_filter/filter_form_builder"
+#require "usefull_filter/filter_form_builder"
 #L'helper si occupa di wrappare la classe MetaSearch permettendo l'utilizzo di Filtri selezionabili dall'utente
 #
 #[documents_controller]
@@ -49,18 +49,22 @@ module UsefullFilterHelper
       options[:html][:class] ||= "span-24 filter_bar"
       options[:html_1] = options.delete(:html)
       options.merge!(:builder => UsefullFilter::FilterFormBuilder)
+     
+      remove_filter_label = I18n.t(:remove_filter, :scope => "metasearch.buttons")
+      filter_title = I18n.t(:filter_title, :scope => "metasearch.buttons")
+      
       #Estraggo le options che mi interessano, perchè una volta passate al builder
       #per qulache arcano motivo vengono alterate....
       classe = options[:html_1].delete(:class)
       url = options[:url]
       #UserSession.log("FilterHelper#filter_for_new: options=#{options.inspect}")
       content_tag(:div,
-        content_tag(:h3, t(:title, :scope => :filter)) +
+        content_tag(:h3, filter_title) +
         content_tag(:ul,
           form_for(obj, *(args << options), &proc) +
           form_tag(url_for(url), :method => :get) do
             obj.search_attributes.each_key {|k| concat hidden_field_tag("search[#{k}]") } 
-            concat submit_tag(t(:remove_filter, :scope => :filter), :class => "push-2")
+            concat submit_tag(remove_filter, :class => "push-2")
           end ),
       :class => classe)
     end

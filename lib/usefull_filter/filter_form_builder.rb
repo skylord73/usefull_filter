@@ -60,7 +60,8 @@ module UsefullFilter
     end
     
     def submit
-      super(I18n.t(:filter, :scope => :filter), :class => "push-1")
+    	applay_filter_label = I18n.t(:applay_filter, :scope => "metasearch.buttons")
+      super(applay_filter, :class => "push-1")
     end
       
     private
