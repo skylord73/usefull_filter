@@ -1,5 +1,5 @@
 /* Filter bar personalizzata */
-.filter_bar {
+.usefull_filter_container {
   width: 946px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -9,7 +9,7 @@
 }
 
   /* self-clearing method: */
-.filter_bar li {
+.usefull_filter_containe li {
   display: inline;
   float: left;
   width: 50%;
@@ -17,10 +17,6 @@
   color: #105cb6;
 }
 
-.double_column_list li {
-	float: left;
-	width: 50%;
-}
-  
+
 
   
