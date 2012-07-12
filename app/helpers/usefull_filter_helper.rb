@@ -41,12 +41,10 @@ module UsefullFilterHelper
       options = args.extract_options!
 
       options[:html] ||= {}
-      #options[:html][:select] ||= { :style => "margin:0 0 0 0;"}
-      #options[:html][:input] ||= { :style => "margin:0 0 0 0;"}
       options[:html][:select] ||= {}
       options[:html][:input] ||= {}
       options[:html][:method] ||= :get
-      options[:html][:class] ||= "span-24 filter_bar"
+      options[:html][:class] ||= "usefull_filter_container"
       options[:html_1] = options.delete(:html)
       options.merge!(:builder => UsefullFilter::FilterFormBuilder)
      

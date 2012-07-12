@@ -1,0 +1,26 @@
+/* Filter bar personalizzata */
+.filter_bar {
+  width: 946px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background: #E6E6E6;
+  cursor: default;
+  border: 2px solid #C8C8C8;
+}
+
+  /* self-clearing method: */
+.filter_bar li {
+  display: inline;
+  float: left;
+  width: 50%;
+  text-decoration: none;
+  color: #105cb6;
+}
+
+.double_column_list li {
+	float: left;
+	width: 50%;
+}
+  
+
+  
