@@ -23,7 +23,7 @@ it:
       is_not_null: "%{attribute} non è nullo"
       between: "%{attribute} compreso tra"
     buttons:
-      applay_filte: "Filtra"
+      applay_filter: "Filtra"
       remove_filter: "Rimuovi Filtri"
       filter_title: "Filtri"
     
