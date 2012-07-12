@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
-    @users = User.all
+  	@search = User.search(params[:search])
+    @users = @search
 
     respond_to do |format|
       format.html # index.html.erb

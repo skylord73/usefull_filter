@@ -1,5 +1,11 @@
 <h1>Listing users</h1>
 
+<%= filter_for @search, :url => users_path do |f| %>
+	<%= f.text_field :name %>
+	<%= f.text_field :age %>
+	<%= f.submit %>
+<% end %>
+
 <table>
   <tr>
     <th>Name</th>
