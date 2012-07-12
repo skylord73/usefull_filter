@@ -64,7 +64,7 @@ module UsefullFilterHelper
           form_for(obj, *(args << options), &proc) +
           form_tag(url_for(url), :method => :get) do
             obj.search_attributes.each_key {|k| concat hidden_field_tag("search[#{k}]") } 
-            concat submit_tag(remove_filter, :class => "push-2")
+            concat submit_tag(remove_filter_label, :class => "push-2")
           end ),
       :class => classe)
     end
