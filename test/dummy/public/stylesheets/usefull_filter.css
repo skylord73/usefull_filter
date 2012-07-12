@@ -9,7 +9,7 @@
 }
 
   /* self-clearing method: */
-.usefull_filter_containe li {
+.usefull_filter_container li {
   display: inline;
   float: left;
   width: 50%;
@@ -17,6 +17,7 @@
   color: #105cb6;
 }
 
-
+.usefull_filter_push-1 {margin:0 -40px 1.5em 40px;}
+.usefull_filter_push-2 {margin:0 -80px 1.5em 80px;}
 
   
