@@ -1,3 +1,4 @@
+require "usefull_filter/filter_form_builder"
 #L'helper si occupa di wrappare la classe MetaSearch permettendo l'utilizzo di Filtri selezionabili dall'utente
 #
 #[documents_controller]
