@@ -50,8 +50,8 @@ module UsefullFilterHelper
       options[:html_1] = options.delete(:html)
       options.merge!(:builder => UsefullFilter::FilterFormBuilder)
      
-      remove_filter_label = I18n.t("remove_filter", :scope => "metasearch.buttons")
-      filter_title = I18n.t("filter_title", :scope => "metasearch.buttons")
+      remove_filter_label = I18n.t("remove_filter", :scope => "meta_search.buttons")
+      filter_title = I18n.t("filter_title", :scope => "meta_search.buttons")
       
       #Estraggo le options che mi interessano, perchè una volta passate al builder
       #per qulache arcano motivo vengono alterate....
