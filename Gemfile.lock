@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     usefull_filter (0.0.1)
+      actionpack (= 3.0.9)
       meta_search
       rails (= 3.0.9)
 
