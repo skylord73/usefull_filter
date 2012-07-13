@@ -1,0 +1,29 @@
+it:
+  meta_search:
+    predicates:
+      equals: "%{attribute} ="
+      does_not_equal: "%{attribute} !="
+      contains: "%{attribute} contiene"
+      does_not_contain: "%{attribute} non contiene"
+      starts_with: "%{attribute} inizia con"
+      does_not_start_with: "%{attribute} non inizia con"
+      ends_with: "%{attribute} finisce con"
+      does_not_end_with: "%{attribute} non finisce con"
+      greater_than: "%{attribute} >"
+      less_than: "%{attribute} <"
+      greater_than_or_equal_to: "%{attribute} >="
+      less_than_or_equal_to: "%{attribute} <="
+      in: "%{attribute} è uno di"
+      not_in: "%{attribute} non è uno di"
+      is_true: "%{attribute} è vero"
+      is_false: "%{attribute} è falso"
+      is_present: "%{attribute} è presente"
+      is_blank: "%{attribute} è bianco"
+      is_null: "%{attribute} è nullo"
+      is_not_null: "%{attribute} non è nullo"
+      between: "%{attribute} compreso tra"
+    buttons:
+      applay_filter: "Filtra"
+      remove_filter: "Rimuovi Filtri"
+      filter_title: "Filtri"
+    
