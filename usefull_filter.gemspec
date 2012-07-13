@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.require_paths    = ["lib"]
   s.version          = UsefullFilter::VERSION
   
-  s.add_dependency "rails", "~>3.0"
+  s.add_dependency "rails", "~>3.0.14"
   s.add_dependency "meta_search"
   
   
