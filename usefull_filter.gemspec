@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.version          = UsefullFilter::VERSION
   
   s.add_dependency "rails", "3.0.14"
+  s.add_dependency "actionpack", "3.0.9"
   s.add_dependency "meta_search"
   
   
