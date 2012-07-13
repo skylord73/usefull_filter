@@ -5,7 +5,7 @@
 
 source "http://rubygems.org"
 
-gem "rails", "3.0.14"
+gem "rails", "~>3.0"
 gem "meta_search"
 
 group :development, :test do
